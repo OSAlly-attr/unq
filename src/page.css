@@ -22,7 +22,7 @@
 }
 
 .wrap-flag{
-    height : 400px;
+    height : 300px;
     margin : 20px 0;
     text-align :center;
 }
@@ -31,6 +31,8 @@
     margin : 20px 0;
     border-radius: 0px;
     filter:drop-shadow(5px 0 10px gray);
+    height: 70%;
+    width: auto;
 }
 .body {
     /* padding-top:25px; */
@@ -41,7 +43,7 @@
 }
 .container {
     max-width:600px;
-    margin:0 auto;
+    margin:-8px auto;
     text-align:center;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
@@ -59,7 +61,6 @@
     text-align:center;
     padding:18px 0 18px 0;
     font-size: 1.4em;
-    
     border-radius:6px 6px 0px 0px;
 }
 .question{
@@ -71,6 +72,7 @@
 .correct{
     background-color:#fa8a39;
 }
+
 input {
     margin-bottom:10px;
 }
@@ -98,7 +100,7 @@ input, textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 80%;
+    width: 70%;
     max-width: 600px;
 }
 ::-webkit-input-placeholder {
@@ -147,46 +149,19 @@ button:hover, .button:hover {
 .hint_showed:hover{
     background:#a6a7a7;
 }
-/* label.error {
-    font-family:'Source Sans Pro',arial,sans-serif;
-    font-size:1em;
-    display:block;
-    padding-top:10px;
-    padding-bottom:10px;
-    background-color:#d89c9c;
-    width: 80%;
-    margin:auto;
-    color: #FAFAFA;
-    -webkit-border-radius:6px;
-    -moz-border-radius:6px;
-    border-radius:6px;
-} */
-  /* media queries */
-@media (max-width: 700px) {
-    label.error {
+@media (max-width: 500px) {
+    .container{
+        margin: -10px auto;
         width: 90%;
     }
-    input, textarea {
-        width: 90%;
+    .wrap-flag{
+        height: 200px;
     }
-    button {
-        width:90%;
+    .flag{
+        height: 70%;
+        width: auto;
     }
-    body {
-    padding-top:10px;
-    }  
+    input{
+        width: 60%;
+    }
 }
-/* .message {
-    font-family:'Source Sans Pro',arial,sans-serif;
-    font-size:1.1em;
-    display:none;
-    padding-top:10px;
-    padding-bottom:10px;
-    background-color:#2ABCA7;
-    width: 80%;
-    margin:auto;
-    color: #FAFAFA;
-    -webkit-border-radius:6px;
-    -moz-border-radius:6px;
-    border-radius:6px;
-} */
