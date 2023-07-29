@@ -43,7 +43,8 @@ const Flag = () =>{
     }
     
     var tmp = ('000' + (ramnum[count])).slice(-3);
-    var path = './flags/num/'+ tmp +'.png';
+    var path = '/flags/num/'+ tmp +'.png';
+    // var path = {`${process.env.PUBLIC_URL}/flags/num/001.png`}
     var ind = 0;
     if(count === 0){
         ind = count;
@@ -51,11 +52,11 @@ const Flag = () =>{
         ind = count-1;
     }
     tmp = ('000' + (ramnum[ind])).slice(-3);
-    var pastpath = './flags/num/'+ tmp +'.png';
+    var pastpath = '/flags/num/'+ tmp +'.png';
     return(
         <div className='body'>
             <div className='header'>
-                <img className='headericon' src={pastpath} alt='icon'/>
+                <img className='headericon' src={`${process.env.PUBLIC_URL}${pastpath}`} height="10px" width="10px" alt='icon'/>
                 <span className='title'>Quiz</span>
             </div>
             <div className='container'>
@@ -65,10 +66,12 @@ const Flag = () =>{
                     <h2 className='Qwhat uncorrect'>Q{count+1}. Uncorrect!</h2>}
                 </div>
                 <div className='wrap-flag'>
-                    <img className="flag" src={path} width={400} alt={f_list[ramnum[count]-1][2]}/>
+                    <img className="flag" src={`${process.env.PUBLIC_URL}${path}`} width={400} alt={f_list[ramnum[count]-1][2]}/>
                 </div>
                 <div>
-                    <input type="text" value={ip} onChange={(e)=>setIp(e.target.value)}/>
+                    <input type="text" value={ip} placeholder='日本語 / English' onChange={(e)=>setIp(e.target.value)}/>
+                </div>
+                <div>
                     {ans_stat===false ?<button onClick={checkAnswer}>Send</button> : <button onClick={changeFlag}>Next</button>}
                 </div>
                 <div>
