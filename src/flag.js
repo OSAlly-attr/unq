@@ -31,7 +31,7 @@ const Flag = () =>{
         setHint(false);
     }
     const checkAnswer = () =>{
-        if(ip === f_list[ramnum[count]-1][1] || ip.toUpperCase === f_list[ramnum[count]-1][2].toUpperCase){
+        if(ip === f_list[ramnum[count]-1][1] || ip.toUpperCase() === f_list[ramnum[count]-1][2].toUpperCase()){
             setAns_stat(true);
             setUncorrect_notion(false);
         }else{
