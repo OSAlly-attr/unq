@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/unq/static/css/main.d73bcb11.css",
-    "main.js": "/unq/static/js/main.cc28bbc2.js",
-    "static/js/787.9a13ab69.chunk.js": "/unq/static/js/787.9a13ab69.chunk.js",
-    "index.html": "/unq/index.html",
-    "main.d73bcb11.css.map": "/unq/static/css/main.d73bcb11.css.map",
-    "main.cc28bbc2.js.map": "/unq/static/js/main.cc28bbc2.js.map",
-    "787.9a13ab69.chunk.js.map": "/unq/static/js/787.9a13ab69.chunk.js.map"
+    "main.css": "/pokemonquiz/static/css/main.a1133b75.css",
+    "main.js": "/pokemonquiz/static/js/main.6d0b2893.js",
+    "static/js/787.f30023ae.chunk.js": "/pokemonquiz/static/js/787.f30023ae.chunk.js",
+    "index.html": "/pokemonquiz/index.html",
+    "main.a1133b75.css.map": "/pokemonquiz/static/css/main.a1133b75.css.map",
+    "main.6d0b2893.js.map": "/pokemonquiz/static/js/main.6d0b2893.js.map",
+    "787.f30023ae.chunk.js.map": "/pokemonquiz/static/js/787.f30023ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d73bcb11.css",
-    "static/js/main.cc28bbc2.js"
+    "static/css/main.a1133b75.css",
+    "static/js/main.6d0b2893.js"
   ]
 }
